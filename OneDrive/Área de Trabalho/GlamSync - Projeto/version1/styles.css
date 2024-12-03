@@ -1,0 +1,112 @@
+/* Cores atualizadas */
+:root {
+    --light-gray: #F5F5F5;
+    --deep-plum: #6B143E;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--light-gray);
+    color: var(--deep-plum);
+}
+
+header {
+    background-color: var(--deep-plum);
+    color: var(--light-gray);
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+main h2 {
+    color: var(--deep-plum);
+}
+
+main button {
+    background-color: var(--deep-plum);
+    color: var(--light-gray);
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+main button:hover {
+    background-color: var(--light-gray);
+    color: var(--deep-plum);
+    border: 2px solid var(--deep-plum);
+}
+
+footer {
+    background-color: var(--deep-plum);
+    color: var(--light-gray);
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+/* Logo */
+header {
+    background-color: var(--deep-plum);
+    padding: 1em;
+    text-align: center;
+}
+
+header .logo {
+    max-width: 200px; /* Ajuste para o tamanho desejado */
+    height: auto;
+}
+/* Fonte global */
+body {
+    font-family: 'Candara', sans-serif;
+    font-weight: lighter; /* Deixa a fonte mais leve */
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray);
+    color: var(--deep-plum);
+}
+
+/* Outros estilos mantidos */
+header {
+    background-color: var(--deep-plum);
+    padding: 1em;
+    text-align: center;
+}
+
+header .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+main {
+    padding: 1em;
+    text-align: center;
+}
+
+button {
+    background-color: var(--deep-plum);
+    color: var(--light-gray);
+    border: none;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    font-family: 'Candara', sans-serif; /* Aplicando fonte no botão */
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: var(--light-gray);
+    color: var(--deep-plum);
+}
+
+
