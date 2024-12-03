@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlamSync</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="gs.png" alt="Logo GlamSync" class="logo">
+    </header>
+    <main>
+        <section class="welcome-section">
+            <h2>Bem-vindo ao GlamSync!</h2>
+            <p>Seu sistema para gerenciar horários e atendimentos no salão de beleza.</p>
+            <button id="loginButton">Login</button>
+            <button id="registerButton">Cadastro</button>
+        </section>
+
+        <!-- Tela de Login -->
+        <section id="loginSection" class="hidden">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" required>
+                <label for="loginPassword">Senha:</label>
+                <input type="password" id="loginPassword" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <button id="backToWelcome">Voltar</button>
+        </section>
+
+        <!-- Tela de Cadastro -->
+        <section id="registerSection" class="hidden">
+            <h2>Cadastro</h2>
+            <form id="registerForm">
+                <label for="registerName">Nome:</label>
+                <input type="text" id="registerName" required>
+                <label for="registerEmail">Email:</label>
+                <input type="email" id="registerEmail" required>
+                <label for="registerPassword">Senha:</label>
+                <input type="password" id="registerPassword" required>
+                <label for="registerCpf">CPF:</label>
+                <input type="text" id="registerCpf" required>
+                <label for="registerWhatsapp">WhatsApp:</label>
+                <input type="tel" id="registerWhatsapp" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <button id="backToWelcomeFromRegister">Voltar</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 GlamSync. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
