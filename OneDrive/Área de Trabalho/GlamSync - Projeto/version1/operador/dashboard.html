@@ -16,6 +16,19 @@
     <main>
         <section>
             <h2>Resumo de Atendimentos</h2>
+            <div class="filters">
+                <label for="periodo">Filtrar por:</label>
+                <select id="periodo">
+                    <option value="diario">Diário</option>
+                    <option value="semanal">Semanal</option>
+                    <option value="anual">Anual</option>
+                    <option value="todo-tempo">Todo Tempo</option>
+                </select>
+                <input type="date" id="dataInicio" />
+                <span>a</span>
+                <input type="date" id="dataFim" />
+                <button id="filtrar">Aplicar Filtro</button>
+            </div>
             <div class="dashboard-cards">
                 <div class="card">
                     <h3>Agendamentos Hoje</h3>
@@ -38,9 +51,59 @@
                 <canvas id="faturamentoChart"></canvas>
             </div>
         </section>
+        
 
         
     </main>
+    <!-- Filtros -->
+    <main>
+        <section>
+            <h2>Filtros</h2>
+            <form id="filters-form">
+                <div>
+                    <label for="agendamentos">Agendamentos:</label>
+                    <select id="agendamentos">
+                        <option value="diario">Diário</option>
+                        <option value="semanal">Semanal</option>
+                        <option value="anual">Anual</option>
+                        <option value="todo-tempo">Todo Tempo</option>
+                        <option value="custom">De data X a data Y</option>
+                    </select>
+                    <input type="date" id="data-inicial" style="display:none;">
+                    <input type="date" id="data-final" style="display:none;">
+                </div>
+    
+                <div>
+                    <label for="faturamento">Faturamento:</label>
+                    <select id="faturamento">
+                        <option value="diario">Diário</option>
+                        <option value="semanal">Semanal</option>
+                        <option value="anual">Anual</option>
+                        <option value="todo-tempo">Todo Tempo</option>
+                        <option value="custom">De data X a data Y</option>
+                    </select>
+                    <input type="date" id="data-inicial-faturamento" style="display:none;">
+                    <input type="date" id="data-final-faturamento" style="display:none;">
+                </div>
+    
+                <div>
+                    <label for="procedimentos">Procedimentos:</label>
+                    <select id="procedimentos">
+                        <option value="diario">Diário</option>
+                        <option value="semanal">Semanal</option>
+                        <option value="anual">Anual</option>
+                        <option value="todo-tempo">Todo Tempo</option>
+                        <option value="custom">De data X a data Y</option>
+                    </select>
+                    <input type="date" id="data-inicial-procedimentos" style="display:none;">
+                    <input type="date" id="data-final-procedimentos" style="display:none;">
+                </div>
+    
+                <button type="submit">Aplicar Filtros</button>
+            </form>
+        </section>
+    </main>
+    
     <footer>
         <p>&copy; 2024 GlamSync. Todos os direitos reservados.</p>
     </footer>

@@ -103,3 +103,56 @@ footer {
     margin-top: 2em;
     font-size: 0.9em;
 }
+/* Filtros */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--deep-plum);
+}
+
+.filters label {
+    font-size: 1em;
+    color: var(--deep-plum);
+    font-weight: bold;
+}
+
+.filters select,
+.filters input[type="date"] {
+    padding: 0.5em;
+    border: 1px solid var(--deep-plum);
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: var(--deep-plum);
+    background-color: #fff;
+}
+
+.filters button {
+    padding: 0.6em 1em;
+    background-color: var(--deep-plum);
+    color: var(--light-gray);
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filters button:hover {
+    background-color: #4a0e2e;
+}
+
+.filters span {
+    font-size: 1em;
+    color: var(--deep-plum);
+    margin: 0 5px;
+}
+
