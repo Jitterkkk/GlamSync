@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - GlamSync</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="gs.png" alt="Logo GlamSync" class="logo">
+    </header>
+    <main>
+        <h2>Agendar Procedimento</h2>
+        <form id="form-agendamento">
+            <label for="procedimento">Tipo de Procedimento:</label>
+            <select id="procedimento" name="procedimento">
+                <option value="corte">Corte de Cabelo</option>
+                <option value="manicure">Manicure</option>
+                <option value="coloracao">Coloração</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" name="horario" required>
+
+            <button type="submit">Confirmar Agendamento</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 GlamSync. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

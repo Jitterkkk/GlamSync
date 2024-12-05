@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - GlamSync</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <header>
+        <img src="gs.png" alt="Logo GlamSync" class="logo">
+        <h1>Dashboard - GlamSync</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Resumo de Atendimentos</h2>
+            <div class="dashboard-cards">
+                <div class="card">
+                    <h3>Agendamentos Hoje</h3>
+                    <p>25</p>
+                </div>
+                <div class="card">
+                    <h3>Faturamento Total</h3>
+                    <p>R$ 1.500,00</p>
+                </div>
+                <div class="card">
+                    <h3>Principais Procedimentos</h3>
+                    <p>Corte de Cabelo</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Gráficos de Desempenho</h2>
+            <div class="charts">
+                <canvas id="procedimentosChart"></canvas>
+                <canvas id="faturamentoChart"></canvas>
+            </div>
+        </section>
+
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 GlamSync. Todos os direitos reservados.</p>
+    </footer>
+    <script src="dashboard.js"></script>
+</body>
+</html>
