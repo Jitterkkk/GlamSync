@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhamento - GlamSync</title>
+    <link rel="stylesheet" href="detalhamento.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="gs.png" alt="Logo GlamSync">
+            <h1>Detalhamento - GlamSync</h1>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Filtros de Detalhamento</h2>
+            <div class="filters">
+                <label for="select-procedure">Procedimento:</label>
+                <select id="select-procedure">
+                    <option value="all">Todos</option>
+                    <option value="cut">Corte de Cabelo</option>
+                    <option value="color">Coloração</option>
+                    <option value="nail">Manicure</option>
+                    <option value="hydrate">Hidratação</option>
+                </select>
+                <label for="date-start">Data Inicial:</label>
+                <input type="date" id="date-start">
+                <label for="date-end">Data Final:</label>
+                <input type="date" id="date-end">
+                <button id="filter-btn">Aplicar Filtro</button>
+            </div>
+        </section>
+        <section>
+            <h2>Detalhes</h2>
+            <div id="details-table">
+                <!-- Tabela será preenchida dinamicamente pelo JavaScript -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 GlamSync. Todos os direitos reservados.</p>
+    </footer>
+    <script src="detalhamento.js"></script>
+</body>
+</html>
